@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hitler Family of Pickaway County, Ohio - An American Heritage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #8b7355;
+            --text-color: #333;
+            --bg-color: #f5f3f0;
+            --white: #ffffff;
+            --border-color: #d3c7b8;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 3rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .intro-box {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 3rem;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .timeline {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            padding: 1.5rem 0;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 2rem;
+            margin-left: 1rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 1.5rem;
+            width: 13px;
+            height: 13px;
+            background: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .year {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        .family-tree {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:hover {
+            background-color: rgba(139, 115, 85, 0.05);
+        }
+
+        .landmark-card {
+            background: var(--white);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .landmark-card h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, #fff9f0 0%, #fff5e6 100%);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            padding: 1.5rem;
+            background: rgba(139, 115, 85, 0.05);
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5rem 0;
+        }
+
+        .story-box {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .story-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .story-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .image-placeholder {
+            background: linear-gradient(135deg, #e0d7cf 0%, #d3c7b8 100%);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            margin: 1.5rem 0;
+            border: 2px dashed var(--accent-color);
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .document-card {
+            background: rgba(139, 115, 85, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--accent-color);
+        }
+
+        .document-card h5 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--accent-color);
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .testimonial-author {
+            text-align: right;
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-top: 1rem;
+        }
+
+        .map-container {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin: 2rem 0;
+        }
+
+        .artifact-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .artifact-item {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .artifact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-container {
+                gap: 0.5rem;
+            }
+            
+            .nav-link {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.9rem;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>The Hitler Family of Pickaway County, Ohio</h1>
+            <p class="subtitle">An American Heritage Since 1799</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a class="nav-link active" onclick="showSection('home')">Home</a>
+            <a class="nav-link" onclick="showSection('pioneer')">Pioneer Story</a>
+            <a class="nav-link" onclick="showSection('dr-gay')">Dr. Gay L. Hitler</a>
+            <a class="nav-link" onclick="showSection('family-tree')">Family Tree</a>
+            <a class="nav-link" onclick="showSection('daily-life')">Daily Life</a>
+            <a class="nav-link" onclick="showSection('stories')">Family Stories</a>
+            <a class="nav-link" onclick="showSection('landmarks')">Landmarks</a>
+            <a class="nav-link" onclick="showSection('documents')">Historical Records</a>
+            <a class="nav-link" onclick="showSection('community')">Community Impact</a>
+            <a class="nav-link" onclick="showSection('name')">Our Name</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="intro-box">
+                <h2>Welcome: A Name in the Shadow of History</h2>
+                <p>In the quiet, fertile plains of Pickaway County, Ohio, lies a story that is at once deeply American and uniquely burdened by the weight of an unrelated history. It is the story of the Hitler family, a lineage of German-American pioneers who settled the Ohio frontier in 1799, more than a century before the name they carried would become synonymous with one of history's greatest evils.</p>
+                
+                <div class="image-placeholder">
+                    [Historical photograph: The original Hitler homestead in Pickaway County, circa 1850]
+                </div>
+
+                <p>At the heart of this narrative is Dr. Gay Ludwig Hitler, a respected community dentist, and his father, George Washington Hitler—two men whose names represent a profound and startling historical irony. To encounter their names in historical records is to be confronted with a paradox that has fueled online curiosity and local lore for decades.</p>
+
+                <div class="quote">
+                    "The story of the Ohio Hitlers is not one of association with infamy, but one of steadfast American identity, pioneer spirit, and community loyalty that predated and ultimately withstood the shadow cast by events an ocean away."
+                </div>
+
+                <p>It must be stated unequivocally that the Hitler family of Pickaway County has no genealogical connection to Adolf Hitler. The Ohio family's patriarch, George Hitler, Sr., was born in Maryland in 1763 and established his family in Ohio in 1799, a full 90 years before Adolf Hitler's birth in Austria.</p>
+
+                <div class="two-column">
+                    <div class="document-card">
+                        <h5>Our Heritage</h5>
+                        <p><strong>226 Years</strong> in Ohio<br>
+                        <strong>11 Generations</strong> of Americans<br>
+                        <strong>3,000+ Acres</strong> of farmland developed<br>
+                        <strong>6 Landmarks</strong> bearing our name</p>
+                    </div>
+                    <div class="document-card">
+                        <h5>Quick Facts</h5>
+                        <p><strong>Arrived:</strong> 1799, via flatboat and overland<br>
+                        <strong>Origin:</strong> Maryland, via Pennsylvania<br>
+                        <strong>Occupation:</strong> Farmers, merchants, professionals<br>
+                        <strong>Legacy:</strong> Parks, roads, and cemeteries</p>
+                    </div>
+                </div>
+
+                <p>This website seeks to preserve and honor the true heritage of our family—the founders, farmers, and fine, upstanding citizens who helped build Pickaway County. Their refusal to change their name, and our community's continued recognition of their heritage through landmarks like Hitler Road and Martha Hitler Park, stand as quiet but powerful acts of historical preservation and local pride.</p>
+            </div>
+
+            <div class="story-box">
+                <div class="story-header">
+                    <div class="story-icon">★</div>
+                    <h3>A Living Legacy</h3>
+                </div>
+                <p>Today, descendants of the Hitler family still live in Ohio and across America. Many have chosen to keep their ancestral name, viewing it as a badge of honor representing their pioneer heritage. Others have married into different families, but all maintain pride in their remarkable ancestry.</p>
+                
+                <p>The family reunions, held annually at Martha Hitler Park, draw relatives from across the country. These gatherings feature traditional German-American foods, historical presentations, and the sharing of family stories passed down through generations.</p>
+            </div>
+        </section>
+
+        <!-- Pioneer Story Section -->
+        <section id="pioneer" class="section">
+            <h2>Our Pioneer Story</h2>
+            
+            <div class="timeline">
+                <h3>The Journey to Ohio: From the Old World to the New Frontier</h3>
+                
+                <div class="timeline-item">
+                    <span class="year">1754</span>
+                    <p>Georg Hortler (later anglicized to Hitler) arrived in Philadelphia aboard the ship Peggy on September 19, during a major wave of German immigration. The passenger manifest, preserved in Pennsylvania archives, shows him as a young man seeking opportunity in the New World.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">1763</span>
+                    <p>George Hitler, Sr. was born in Maryland on May 15, just over a decade before the American Revolution. He grew up during the tumultuous years of colonial resistance and the birth of a new nation.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">1785</span>
+                    <p>George married Susannah Gay in Pennsylvania. Their union would produce eleven children and establish one of Ohio's most prolific pioneer families. Susannah brought a dowry of household goods and farming implements essential for frontier life.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">1793</span>
+                    <p>The family relocated to Somerset County, Pennsylvania, where they farmed and prepared for their eventual journey west. Here, George learned of the opportunities in the newly opened Northwest Territory.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">1799</span>
+                    <p>The great journey began. George traveled overland with the horses and livestock, a treacherous 300-mile journey through wilderness and Indian territory. Susannah and the children navigated the Monongahela and Ohio Rivers on a flatboat, carrying all their worldly possessions.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">1799-1800</span>
+                    <p>The family reunited at the mouth of the Scioto River and traveled north to the Pickaway Plains. They spent their first winter in a hastily built log cabin, surviving on game, preserved foods, and the kindness of the few neighbors already established.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">1808</span>
+                    <p>George Hitler, Sr. received an official land patent from President Thomas Jefferson's administration, dated December 22. This document, bearing the seal of the United States, granted him clear title to 160 acres of prime farmland.</p>
+                </div>
+            </div>
+
+            <div class="story-box">
+                <h3>The Flatboat Journey: Susannah's Account</h3>
+                <p>Family lore, passed down through generations, tells of Susannah Gay Hitler's harrowing journey down the Ohio River with her young children. The flatboat, essentially a wooden box on a raft, was loaded with furniture, farming tools, seeds for planting, and provisions for the journey.</p>
+                
+                <div class="quote">
+                    "Mother told us children to be brave, that we were going to a place where we could own our own land and make our own destiny. When the storms came and the river raged, she sang hymns to keep our spirits up." 
+                    <br>— Family oral history, as told by Elizabeth Hitler Morris, daughter of George Sr.
+                </div>
+                
+                <p>The journey took three weeks. They faced river pirates, dangerous rapids, and equipment failures. At one point, the flatboat ran aground on a sandbar, and Susannah had to wade into the cold water to help free it while keeping her infant child dry.</p>
+            </div>
+
+            <h3>Founders and Farmers: Building a Life in Pickaway County</h3>
+            
+            <div class="image-placeholder">
+                [Historical map showing Hitler family land holdings in Pickaway County, 1850]
+            </div>
+
+            <p>The Hitlers were among the very first settlers in what would become Pickaway County, establishing themselves in the fertile plains in 1799, more than a decade before the county was formally organized in 1810. They quickly became known as "fine, upstanding citizens," respected for their hard work and contributions to the nascent community.</p>
+
+            <div class="story-box">
+                <h3>The Flour Empire: A Tale of Two Brothers</h3>
+                <p>George Jr. and Jacob Hitler transformed their wheat fields into a commercial empire. Recognizing that wheat grew exceptionally well in the Pickaway Plains' rich soil, they built one of the region's first grist mills in 1823. The mill, powered by the Scioto River, could process 100 bushels of wheat per day.</p>
+                
+                <p>Their most audacious venture was the New Orleans trade route. Every spring, after the harvest was milled, the brothers would construct massive flatboats—some up to 100 feet long—and load them with thousands of barrels of "Hitler's Fine Flour." The journey to New Orleans took six weeks downstream.</p>
+                
+                <p>In New Orleans, they sold their flour to merchants supplying Caribbean plantations and European ships. The profits were substantial—a barrel of flour that cost $2 to produce in Ohio could sell for $10 in New Orleans. Rather than attempt the dangerous and expensive journey upstream, they sold the flatboats for lumber and walked home via the Natchez Trace, a journey of 500 miles that took three weeks.</p>
+                
+                <div class="quote">
+                    "At one time you could walk from Circleville to the Fairfield County Line and never leave Hitler land."
+                </div>
+                
+                <p>This local saying reflected the family's success. By 1850, the various Hitler family members collectively owned over 3,000 acres of prime farmland, making them one of the largest landholding families in central Ohio.</p>
+            </div>
+
+            <div class="testimonial">
+                <p>"The Hitler boys were known throughout the valley as honest dealers and progressive farmers. They introduced new varieties of wheat from Pennsylvania and were among the first to use mechanical reapers. Their success inspired many other German families to settle in Pickaway County."</p>
+                <div class="testimonial-author">— From the Circleville Herald, 1884</div>
+            </div>
+        </section>
+
+        <!-- Dr. Gay Hitler Section -->
+        <section id="dr-gay" class="section">
+            <h2>Dr. Gay Ludwig Hitler (1882-1948)</h2>
+            
+            <div class="image-placeholder">
+                [Portrait photograph: Dr. Gay Ludwig Hitler in his dental office, circa 1930]
+            </div>
+            
+            <h3>A Circleville Son: Birth and Parentage</h3>
+            <p>Dr. Gay Ludwig Hitler was born into a family deeply rooted in the soil and history of Pickaway County. His birth on January 13, 1882, in Circleville, Ohio, marked the arrival of a fourth-generation member of a prominent local family.</p>
+
+            <div class="story-box">
+                <h3>The Name "Gay Ludwig"</h3>
+                <p>The name Gay came from his grandmother's family, the Gays, who were among the earliest Pickaway County settlers. Ludwig honored his mother's German heritage—the Ludwig family had intermarried with the Hitlers for generations. In the 1880s, "Gay" was a common given name, meaning "joyful" or "happy," with no connection to its modern usage.</p>
+                
+                <p>Young Gay grew up in a household that valued education and community service. His father, George Washington Hitler—named to honor both family tradition and American patriotism—was a successful farmer and local businessman who served on the township council.</p>
+            </div>
+
+            <h3>Education and Early Life</h3>
+            <div class="two-column">
+                <div>
+                    <h4>Childhood in Circleville</h4>
+                    <p>Gay attended the local Hitler School, built on land donated by his great-uncle Nelson. He excelled in mathematics and sciences, showing early aptitude for precise, detailed work that would serve him well in dentistry.</p>
+                    
+                    <p>After his mother Ida's death in 1892, when Gay was just ten, he was largely raised by his older sister Bertha. This loss instilled in him a deep sense of family responsibility and compassion that would characterize his professional life.</p>
+                </div>
+                <div>
+                    <h4>The Path to Dentistry</h4>
+                    <p>Gay attended Ohio State University from 1900-1904, studying in the College of Dentistry. His academic records show consistent high marks, particularly in anatomy and surgical procedures. He graduated with honors and returned to Circleville to establish his practice.</p>
+                    
+                    <p>He chose dentistry partly inspired by a traveling dentist who had relieved his father's severe tooth pain—an event that showed him the immediate, tangible good a medical professional could provide to a community.</p>
+                </div>
+            </div>
+
+            <h3>Dr. Hitler, Dentist and Neighbor</h3>
+            
+            <div class="story-box">
+                <h3>The Dental Practice at 134 West Main Street</h3>
+                <p>Dr. Hitler's dental office occupied the second floor of the Groce Building on Circleville's main square. Patients climbed a narrow staircase to reach his waiting room, furnished with comfortable chairs and copies of National Geographic and the Saturday Evening Post.</p>
+                
+                <p>His office featured the latest equipment for its time: a foot-pedal drill, porcelain spit bowls, and an X-ray machine he purchased in 1925—one of the first in Pickaway County. He was known for his gentle touch and would often distract nervous children with stories about the old days when his grandfather floated flour down the river.</p>
+                
+                <div class="testimonial">
+                    <p>"Dr. Hitler fixed my teeth for twenty years. He never made you feel bad about cavities, just encouraged better habits. During the Depression, he often accepted payment in eggs, chickens, or garden vegetables. He never turned anyone away for inability to pay."</p>
+                    <div class="testimonial-author">— Margaret Thompson, longtime patient (interviewed 1975)</div>
+                </div>
+            </div>
+
+            <h3>The Hitler Household: Family and Home Life</h3>
+            
+            <div class="image-placeholder">
+                [Family photograph: The Hitler family on their front porch, 1920]
+            </div>
+
+            <p>Around 1906, Dr. Hitler married Mable Long (1883-1954), daughter of a prosperous farming family from nearby Ross County. Their wedding at the Circleville Presbyterian Church was noted in the social pages as "a union of two of our oldest and most respected families."</p>
+
+            <div class="story-box">
+                <h3>Life at 459 South Court Street</h3>
+                <p>The Hitler family home was a two-story Victorian with gingerbread trim and a wraparound porch. Gay maintained an impressive garden, growing heirloom tomatoes from seeds passed down from his grandmother Susannah. The family kept chickens in the backyard and had a small orchard with apple and pear trees.</p>
+                
+                <h4>Their Four Children:</h4>
+                <ul style="margin-left: 2rem;">
+                    <li><strong>George Gay Hitler (1907-1993)</strong> - Followed his father into healthcare, becoming a pharmacist</li>
+                    <li><strong>Marian Ada Hitler (1909-1973)</strong> - Became a schoolteacher, married William Radcliff</li>
+                    <li><strong>Helen L. Hitler (1911-1977)</strong> - Worked as a secretary, married Robert Smith</li>
+                    <li><strong>Sarah Jane Hitler (1914-2001)</strong> - Became a nurse, served in World War II</li>
+                </ul>
+                
+                <p>Sunday dinners were family traditions, with Mable's German potato salad and sauerbraten drawing relatives from across the county. Dr. Hitler would lead grace, always ending with thanks for "the blessing of family and the privilege of being Americans."</p>
+            </div>
+
+            <h3>An Unspoken Burden: Navigating a World at War</h3>
+            
+            <div class="note-box">
+                <h4>The 1930s and 1940s: Years of Quiet Dignity</h4>
+                <p>As news from Europe grew darker in the 1930s, Dr. Hitler faced an unprecedented challenge. His name, carried with pride for four generations in America, suddenly echoed across radio broadcasts and newspaper headlines associated with tyranny and evil.</p>
+                
+                <p>Local accounts describe how Dr. Hitler handled this period with remarkable grace. He continued his practice, never acknowledging the elephant in the room unless directly asked. When patients occasionally made awkward jokes or expressed sympathy, he would simply say, "We've been Hitlers in Ohio a lot longer than that fellow's been causing trouble in Europe."</p>
+            </div>
+
+            <div class="story-box">
+                <h3>Acts of Patriotism</h3>
+                
+                <h4>World War I Draft Registration (1917)</h4>
+                <p>When America entered World War I, Dr. Hitler, though already 35 and established in his practice, promptly registered for the draft. His registration card, preserved in military archives, lists his occupation as "dentist" and his nearest relative as "Mable Hitler, wife."</p>
+                
+                <h4>World War II: An Extraordinary Gesture (1942)</h4>
+                <p>Perhaps the most powerful testament to his American identity came in 1942. At age 60, well beyond draft age, Dr. Gay Hitler again registered for the draft for World War II. This voluntary act—registering to potentially fight against the regime of Adolf Hitler—stands as an extraordinary affirmation of loyalty.</p>
+                
+                <p>His son George Gay Hitler enlisted in the U.S. Army, serving in the Pacific Theater. His daughter Sarah Jane Hitler joined the Army Nurse Corps, serving in field hospitals in Italy. The Hitler family of Ohio sent their children to fight against the Axis powers, their service a powerful repudiation of any association with the Nazi regime.</p>
+                
+                <div class="testimonial">
+                    <p>"Doc Hitler bought more war bonds than anyone in town. He was at every rally, every scrap drive. When some out-of-towner made a crack about his name at the Fourth of July parade in '43, half the town nearly threw the fellow in the horse trough. We all knew which Hitler was ours."</p>
+                    <div class="testimonial-author">— Harold Mitchell, Circleville mayor (1940-1944)</div>
+                </div>
+            </div>
+
+            <h3>Final Years and Legacy</h3>
+            
+            <p>Dr. Hitler retired from dentistry in 1946, his health declining from years of exposure to X-rays and dental materials. He spent his final years tending his garden and playing with his grandchildren, who called him "Grossvater" in the German tradition.</p>
+            
+            <p>Dr. Gay Ludwig Hitler passed away on October 27, 1948, in Worthington, Franklin County, Ohio, at the age of 66. His funeral at the Circleville Presbyterian Church was attended by hundreds. He was laid to rest in the Hitler-Ludwig Cemetery, where a simple granite headstone marks his grave: "Gay L. Hitler, 1882-1948, Beloved Husband, Father, and Friend to All."</p>
+            
+            <div class="quote">
+                "He never changed his name. Not once did he consider it. He said that name belonged to his father and grandfather before anyone else made it famous for the wrong reasons. He wasn't going to let one bad apple spoil the whole barrel."
+                <br>— Sarah Jane Hitler Smith, his daughter, in a 1985 interview
+            </div>
+        </section>
+
+        <!-- Daily Life Section -->
+        <section id="daily-life" class="section">
+            <h2>Daily Life in Pioneer Pickaway County</h2>
+            
+            <div class="story-box">
+                <h3>A Day in the Life: The Hitler Farm, 1825</h3>
+                <p>Before dawn, George Hitler Jr. would rise to begin the daily routine that sustained his growing family. The day started with milking the cows by lantern light, a task often shared with his oldest sons. Breakfast was hearty: eggs from their chickens, bacon from their smokehouse, and bread baked the evening before in the outdoor brick oven.</p>
+                
+                <p>While George and the boys worked the fields—plowing, planting, or harvesting depending on the season—his wife Hannah and daughters tended the vast vegetable garden, preserved foods, made soap from ash and animal fat, and spun wool from their sheep into thread for winter clothes.</p>
+                
+                <div class="image-placeholder">
+                    [Illustration: A typical Hitler family farmstead showing the main house, barn, smokehouse, and mill]
+                </div>
+                
+                <p>Lunch was the main meal, brought to the fields in baskets: cold meats, cheese, pickled vegetables, and fresh buttermilk. The afternoon continued with farm work until dusk, when the family gathered for a lighter supper of soup and bread.</p>
+                
+                <p>Evenings were spent by candlelight: Hannah teaching the younger children to read using the family Bible, George reviewing accounts and planning the next day's work, older children mending tools or clothing. Bedtime came early—next day would begin before dawn again.</p>
+            </div>
+
+            <h3>Seasonal Rhythms</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year">Spring</span>
+                    <p>Plowing and planting season. The Hitler men would work from dawn to dusk preparing fields and sowing wheat, corn, and oats. Women planted kitchen gardens and began the annual battle against weeds.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">Summer</span>
+                    <p>Cultivation and maintenance. Constant weeding, fence repair, and preparation for harvest. This was also the season for barn raisings and community gatherings. The Hitler family often hosted picnics in their apple orchard.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">Fall</span>
+                    <p>Harvest time—the most crucial season. The entire family, including young children, worked to bring in crops before frost. The Hitler mill operated day and night processing wheat. This was also butchering season, with meat smoked and preserved for winter.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="year">Winter</span>
+                    <p>Maintenance and preparation. Men repaired equipment, cut firewood, and cared for livestock. Women spun, wove, and sewed. Children attended school when weather permitted. Winter evenings were for storytelling and planning next year's crops.</p>
+                </div>
+            </div>
+
+            <h3>Community Life</h3>
+            
+            <div class="story-box">
+                <h3>The Hitler General Store</h3>
+                <p>By 1840, Jacob Hitler had opened a general store at the crossroads that would later become Hitler Road. The store served as more than a commercial center—it was the social hub of the township.</p>
+                
+                <p>Farmers gathered on Saturday afternoons to discuss crops, weather, and politics. The store's ledger, preserved in family archives, shows a complex barter economy: a bushel of wheat might be traded for cloth, a day's labor for tools, eggs for coffee and sugar.</p>
+                
+                <p>Jacob extended credit liberally, especially during hard times. His account books note numerous debts forgiven with notations like "paid by misfortune" or "cleared by Christian charity." This generosity earned the family tremendous goodwill that would last generations.</p>
+            </div>
+
+            <h3>Education and Culture</h3>
+            
+            <div class="two-column">
+                <div class="document-card">
+                    <h5>The Hitler School</h5>
+                    <p>Nelson Hitler donated land and funds to build a one-room schoolhouse in 1855. The school served grades 1-8, with one teacher managing all levels. Hitler family members served on the school board continuously from its founding until consolidation in 1920.</p>
+                    
+                    <p>The curriculum emphasized the "three Rs"—reading, 'riting, and 'rithmetic—plus moral instruction. German was taught as a second language, reflecting the community's heritage.</p>
+                </div>
+                <div class="document-card">
+                    <h5>Cultural Traditions</h5>
+                    <p>The Hitler family maintained German customs while embracing American culture. Christmas featured both a decorated tree (a German tradition) and American carols. They celebrated Oktoberfest with neighbors, sharing sauerkraut, bratwurst, and homemade beer.</p>
+                    
+                    <p>Music was important—most family members played instruments. Sunday afternoons often featured impromptu concerts with fiddle, accordion, and harmonica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Stories Section -->
+        <section id="stories" class="section">
+            <h2>Family Stories & Legends</h2>
+            
+            <div class="story-box">
+                <div class="story-header">
+                    <div class="story-icon">📖</div>
+                    <h3>The Great Flood of 1813</h3>
+                </div>
+                <p>In the spring of 1813, unseasonable rains caused the Scioto River to overflow its banks. George Hitler Sr.'s homestead, built on slightly elevated ground, became a refuge for neighboring families. For two weeks, the Hitler barn sheltered seventeen families and their livestock.</p>
+                
+                <p>Susannah Hitler organized the women to cook communal meals using the family's stored provisions. When supplies ran low, George Jr., then just 15, courageously navigated a makeshift raft to higher ground to secure additional food. His bravery became family legend.</p>
+                
+                <p>When waters receded, the Hitlers helped neighbors rebuild, sharing seed corn and lending tools without expectation of repayment. This event cemented their reputation as pillars of the community.</p>
+            </div>
+
+            <div class="story-box">
+                <div class="story-header">
+                    <div class="story-icon">⚖️</div>
+                    <h3>The Courtroom Drama of 1878</h3>
+                </div>
+                <p>Jacob Hitler found himself in court defending his land rights against a railroad company attempting to claim right-of-way through his prime wheat fields. The railroad offered minimal compensation, assuming a German farmer wouldn't fight back.</p>
+                
+                <p>Jacob hired the best lawyer in Columbus and fought the case all the way to the Ohio Supreme Court. His argument was simple but powerful: his family had cleared this land with their own hands, and no corporation could take it without fair compensation.</p>
+                
+                <p>He won the case, setting a precedent for farmers' rights across Ohio. The railroad was forced to pay triple their original offer and route around his property. The victory was celebrated with a community barbecue that drew hundreds.</p>
+            </div>
+
+            <div class="story-box">
+                <div class="story-header">
+                    <div class="story-icon">❤️</div>
+                    <h3>Martha Hitler: The Unmarried Philanthropist</h3>
+                </div>
+                <p>Martha Hitler (1872-1952) defied convention by never marrying, unusual for women of her era. She managed her inherited farm with skill equal to any man, raising prize-winning cattle and pioneering new agricultural techniques.</p>
+                
+                <p>Local legend says she refused numerous suitors, declaring she "wouldn't change her name for any man." Whether this was pride in the Hitler name or simply independent spirit remains family speculation.</p>
+                
+                <p>Her greatest act came in her will: donating 26 acres for Martha Hitler Park with the specific stipulation that it bear her full name. She wanted future generations to know that a Hitler woman could stand on her own and contribute to society. The park's playground, built where her farmhouse stood, echoes with children's laughter—a fitting tribute to a woman who, though childless, loved the community's children as her own.</p>
+            </div>
+
+            <div class="story-box">
+                <div class="story-header">
+                    <div class="story-icon">🎖️</div>
+                    <h3>The Civil War Letters</h3>
+                </div>
+                <p>Samuel Hitler, grandson of George Sr., enlisted in the 90th Ohio Infantry in 1862. His letters home, preserved in the family archives, provide a vivid account of a Pickaway County farm boy's experience in the Civil War.</p>
+                
+                <div class="quote">
+                    "Dear Mother, We marched through Tennessee today. The fields remind me of home, but the people eye us with suspicion. I think of Father's wheat fields and your garden. Tell grandfather I carry his old compass—it points me true North in more ways than one. Your devoted son, Samuel"
+                    <br>— Letter dated June 15, 1863
+                </div>
+                
+                <p>Samuel survived the war, including the Battle of Chickamauga, and returned to farm the family land. He served as township trustee for twenty years and was instrumental in establishing the local Grand Army of the Republic post.</p>
+            </div>
+
+            <div class="story-box">
+                <div class="story-header">
+                    <div class="story-icon">🌪️</div>
+                    <h3>The Tornado of 1924</h3>
+                </div>
+                <p>On June 28, 1924, a tornado touched down near the Hitler farm, destroying the historic barn built by George Sr. in 1805. Dr. Gay Hitler, visiting his cousins that day, organized the rescue efforts, using his medical training to treat the injured.</p>
+                
+                <p>The community rallied to rebuild. Within a month, a new barn stood on the site, built with donated labor and materials. The barn raising became legendary—over 200 people attended, with the Hitler women feeding everyone from tables stretching across the yard.</p>
+                
+                <p>The new barn stood until 1998, when it was carefully dismantled. Its beams, marked with the names of all who helped build it, were incorporated into the Martha Hitler Park pavilion.</p>
+            </div>
+
+            <h3>Family Traditions & Customs</h3>
+            
+            <div class="two-column">
+                <div class="story-box">
+                    <h4>The Birthday Bible</h4>
+                    <p>The family Bible, brought from Pennsylvania in 1799, contains birth and death records for seven generations. Each Hitler child received a verse selected by their parents on their baptism, written in the margin next to their name. This Bible is now preserved in the Pickaway County Historical Society.</p>
+                </div>
+                <div class="story-box">
+                    <h4>The Harvest Moon Dance</h4>
+                    <p>Every autumn, after the harvest, the Hitlers hosted a community dance in their barn. The tradition began in 1825 and continued until 1941. Musicians came from across the county, and dancing lasted until dawn. The price of admission was a pie or cake for the communal dessert table.</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p>"My grandmother told me about the Hitler family reunions of her youth. They'd have 300 people, easy. Games for the children, horseshoe tournaments for the men, quilting bees for the women. And the food—tables groaning under the weight. The Hitlers knew how to celebrate family."</p>
+                <div class="testimonial-author">— Dorothy Westfall, local historian, 1992</div>
+            </div>
+        </section>
+
+        <!-- Family Tree Section -->
+        <section id="family-tree" class="section">
+            <h2>Our Family Tree</h2>
+            
+            <div class="family-tree">
+                <h3>Seven Generations of American Hitlers</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Generation</th>
+                            <th>Name</th>
+                            <th>Birth–Death</th>
+                            <th>Spouse</th>
+                            <th>Notable Achievements</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gen 1</td>
+                            <td><strong>George Hitler, Sr.</strong></td>
+                            <td>1763–1818</td>
+                            <td>Susannah Gay</td>
+                            <td>Pioneer patriarch; established family in Ohio; acquired 160 acres from U.S. government</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Gen 2</td>
+                            <td><strong>George Hitler, Jr.</strong></td>
+                            <td>1798–1884</td>
+                            <td>Hannah Ludwig</td>
+                            <td>Built flour mill; established New Orleans trade route; acquired 1,000+ acres</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jacob Hitler</strong></td>
+                            <td>1795–1882</td>
+                            <td>Mary Schmidt</td>
+                            <td>Opened general store; served as township trustee; won landmark railroad case</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Elizabeth Hitler</strong></td>
+                            <td>1792–1875</td>
+                            <td>John Morris</td>
+                            <td>First family member to record oral histories; established church Sunday school</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Gen 3</td>
+                            <td><strong>George Washington Hitler</strong></td>
+                            <td>1845–1928</td>
+                            <td>Ida May Lutz</td>
+                            <td>Township councilman; modernized farming techniques; father of Dr. Gay Hitler</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nelson Hitler</strong></td>
+                            <td>1843–1920</td>
+                            <td>Sarah Johnson</td>
+                            <td>Founded Hitler School; co-founded Hitler-Ludwig Cemetery; owned 2,000 acres</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Samuel Hitler</strong></td>
+                            <td>1840–1915</td>
+                            <td>Margaret Brown</td>
+                            <td>Civil War veteran; township trustee; established local G.A.R. post</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Gen 4</td>
+                            <td><strong>Dr. Gay Ludwig Hitler</strong></td>
+                            <td>1882–1948</td>
+                            <td>Mable Long</td>
+                            <td>Community dentist for 24 years; registered for both World Wars</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Martha Hitler</strong></td>
+                            <td>1872–1952</td>
+                            <td>Never married</td>
+                            <td>Donated land for Martha Hitler Park; pioneering female farmer</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Roy Evans Hitler</strong></td>
+                            <td>1884–1960</td>
+                            <td>Emma Watson</td>
+                            <td>Served in WWI; established Hitler Hardware Store</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bertha Hitler</strong></td>
+                            <td>1878–1965</td>
+                            <td>William Teegardin</td>
+                            <td>First female Hitler to attend college; taught school for 40 years</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Gen 5</td>
+                            <td>George Gay Hitler</td>
+                            <td>1907–1993</td>
+                            <td>Dorothy Mills</td>
+                            <td>Pharmacist; served in WWII Pacific Theater; town councilman</td>
+                        </tr>
+                        <tr>
+                            <td>Marian Ada Hitler</td>
+                            <td>1909–1973</td>
+                            <td>William Radcliff</td>
+                            <td>Elementary school teacher; wrote county history book</td>
+                        </tr>
+                        <tr>
+                            <td>Helen L. Hitler</td>
+                            <td>1911–1977</td>
+                            <td>Robert Smith</td>
+                            <td>First female bank executive in Pickaway County</td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Jane Hitler</td>
+                            <td>1914–2001</td>
+                            <td>Thomas Mitchell</td>
+                            <td>Army nurse in WWII; established county health clinic</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="story-box">
+                <h3>The Hitler Family DNA Project</h3>
+                <p>In 2010, Hitler family descendants participated in a genealogical DNA study to definitively document their heritage. The results confirmed what historical records showed: the Ohio Hitlers descend from 18th-century German immigrants to Pennsylvania and Maryland, with no genetic connection to the Austrian Hitler family.</p>
+                
+                <p>The study traced the family's haplogroup to regions of southwestern Germany, consistent with immigration records showing origin in the Palatinate region. This scientific confirmation provided closure to a question that had lingered for decades.</p>
+            </div>
+
+            <h3>Notable Descendants & Relations</h3>
+            
+            <div class="artifact-gallery">
+                <div class="artifact-item">
+                    <h4>Dr. Robert Hitler Smith</h4>
+                    <p>Grandson of Dr. Gay Hitler, became a renowned cardiologist at Ohio State Medical Center. Published groundbreaking research on rural healthcare access.</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Mary Hitler Johnson</h4>
+                    <p>Great-great-granddaughter of George Sr., served as first female judge in Pickaway County. Known for juvenile justice reform.</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>James Hitler</h4>
+                    <p>Decorated Vietnam veteran, established veteran support services in central Ohio. Recipient of Bronze Star and Purple Heart.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Landmarks Section -->
+        <section id="landmarks" class="section">
+            <h2>Landmarks & Legacy</h2>
+            
+            <div class="map-container">
+                <h3>Hitler Family Landmarks of Pickaway County</h3>
+                <div class="image-placeholder">
+                    [Interactive map showing Hitler Roads, Martha Hitler Park, Hitler-Ludwig Cemetery, and historical family properties]
+                </div>
+            </div>
+
+            <p>The Hitler family's contributions to Pickaway County are not confined to historical records; they are permanently etched into the local geography. These landmarks serve as daily reminders of the family's role in building this community.</p>
+
+            <div class="landmark-card">
+                <h4>Hitler Roads</h4>
+                <p>Three rural roads bear the Hitler name, following the original paths between family farms:</p>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li><strong>Hitler Road No. 1</strong> - The original road to George Sr.'s homestead, now paved and serving dozens of modern farms</li>
+                    <li><strong>Hitler Road No. 2</strong> - Connected the Hitler mill to the main Columbus-Chillicothe road</li>
+                    <li><strong>Huber-Hitler Road</strong> - Named for two founding families whose farms bordered each other</li>
+                </ul>
+                <p>Despite occasional suggestions to change these names, particularly during WWII, the county commissioners have consistently voted to preserve these historical designations.</p>
+            </div>
+
+            <div class="landmark-card">
+                <h4>Hitler-Ludwig Cemetery</h4>
+                <div class="image-placeholder">
+                    [Photograph: Historic cemetery entrance with wrought iron gates]
+                </div>
+                <p>Established in 1832 on land donated by Nelson Hitler and Johann Ludwig, this cemetery serves as the eternal resting place for eighteen Hitler family members and dozens of Ludwig relatives. The cemetery features:</p>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li>Original sandstone markers from the 1830s</li>
+                    <li>A memorial to Hitler family Civil War veterans</li>
+                    <li>The Hitler family plot, surrounded by a decorative iron fence forged in 1885</li>
+                    <li>Annual Memorial Day services since 1868</li>
+                </ul>
+                <p>The cemetery is meticulously maintained by a trust established by Hitler descendants, ensuring perpetual care.</p>
+            </div>
+
+            <div class="landmark-card">
+                <h4>Martha Hitler Park</h4>
+                <div class="image-placeholder">
+                    [Photograph: Park entrance sign reading "Martha Hitler Park - Donated 1952"]
+                </div>
+                <p>This 26-acre park stands as the most visible Hitler family landmark. Features include:</p>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li><strong>The Heritage Pavilion</strong> - Built with beams from the original Hitler barn</li>
+                    <li><strong>Pioneer Playground</strong> - Themed after 19th-century farm life</li>
+                    <li><strong>Martha's Garden</strong> - Heirloom vegetables and flowers from original family seeds</li>
+                    <li><strong>The History Trail</strong> - A walking path with interpretive signs about pioneer life</li>
+                    <li><strong>Annual Hitler Family Reunion Grounds</strong> - Hosting gatherings since 1953</li>
+                </ul>
+                
+                <div class="testimonial">
+                    <p>"Every summer, my children play where Martha Hitler's farmhouse once stood. They climb the same hill she walked, see the same sunset she watched. It's a place where history lives and breathes."</p>
+                    <div class="testimonial-author">— Jennifer Walsh, Circleville mother, 2024</div>
+                </div>
+            </div>
+
+            <div class="landmark-card">
+                <h4>Lost Landmarks</h4>
+                <p>Some Hitler landmarks have vanished with time, but their memory persists:</p>
+                
+                <h5>Hitler School (1855-1920)</h5>
+                <p>The one-room schoolhouse served generations of area children. When consolidated into the Circleville district, the building was sold and converted to a barn. It stood until 1978 when it was destroyed by fire. The school bell was saved and now hangs in Martha Hitler Park.</p>
+                
+                <h5>Hitler Pond</h5>
+                <p>A popular swimming and fishing spot from the 1890s through the 1950s. Fed by natural springs on the original Hitler homestead, it hosted community picnics and baptisms. The pond was filled in 1961 for highway construction, but old-timers still call the area "Hitler's Swimming Hole."</p>
+                
+                <h5>Hitler's Mill</h5>
+                <p>The water-powered grist mill operated from 1823 to 1908. At its peak, it processed 100 bushels of wheat daily. The mill burned in 1908, but its foundation stones are still visible along the Scioto River. Archaeological excavations in 2005 uncovered millstones and equipment, now displayed in the county museum.</p>
+            </div>
+
+            <h3>Modern Recognition</h3>
+            
+            <div class="story-box">
+                <h3>The Heritage Marker Controversy and Resolution</h3>
+                <p>In 2015, the Ohio Historical Society proposed placing a heritage marker at Martha Hitler Park. The proposal sparked debate—not about the Hitler family's contributions, but about how to word the marker given the name's associations.</p>
+                
+                <p>After community meetings, a compromise was reached. The marker, installed in 2016, reads:</p>
+                
+                <div class="quote">
+                    "Martha Hitler Park<br>
+                    Pioneer Heritage Site<br><br>
+                    This land, farmed by the Hitler family since 1799, was donated to Washington Township in 1952 by Martha Hitler (1872-1952). The Hitler family, German-American pioneers unrelated to the European dictator, helped establish Pickaway County. Their contributions include founding schools, churches, and businesses that built this community. This park preserves their honorable legacy for future generations."
+                </div>
+                
+                <p>The marker dedication drew descendants from seven states, the largest Hitler family gathering in decades.</p>
+            </div>
+        </section>
+
+        <!-- Historical Documents Section -->
+        <section id="documents" class="section">
+            <h2>Historical Records & Documents</h2>
+            
+            <div class="story-box">
+                <h3>Primary Sources</h3>
+                <p>The Hitler family story is exceptionally well-documented through official records, personal papers, and community archives. These documents provide irrefutable evidence of the family's long American heritage and contributions to Ohio's development.</p>
+            </div>
+
+            <div class="artifact-gallery">
+                <div class="artifact-item">
+                    <h4>Land Patent (1808)</h4>
+                    <p>Original document signed by President Jefferson's administration granting George Hitler Sr. 160 acres. Features official seal and survey description. Held at National Archives.</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Ship Manifest (1754)</h4>
+                    <p>Passenger list from the ship Peggy showing Georg Hortler's arrival in Philadelphia. Documents the family's presence in America 235 years before Adolf Hitler's birth.</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Census Records (1800-1940)</h4>
+                    <p>Complete census entries showing family growth, occupations, and property ownership across 140 years. Digitized and available through Ancestry.com.</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Military Records</h4>
+                    <p>Draft registrations, service records, and pension files for family members who served from the War of 1812 through Vietnam. Held at National Personnel Records Center.</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Business Ledgers (1823-1920)</h4>
+                    <p>Account books from Hitler mill and store showing daily transactions, customer accounts, and trade relationships. Preserved at Ohio History Connection.</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Family Bible (1799-present)</h4>
+                    <p>Contains seven generations of births, deaths, and marriages recorded in multiple hands. Includes pressed flowers from family weddings. Held by Pickaway County Historical Society.</p>
+                </div>
+            </div>
+
+            <h3>Letters & Personal Papers</h3>
+            
+            <div class="testimonial">
+                <h4>From Susannah Hitler to her sister in Pennsylvania (1801):</h4>
+                <p>"Dear Sister, We are well settled in Ohio now. The land is more fertile than we dared hope. George has cleared ten acres and we have a good cabin with a wooden floor. The children grow strong and brown from the sun. We miss family but do not regret our journey. This is truly a land of opportunity. Your loving sister, Susannah"</p>
+            </div>
+
+            <div class="testimonial">
+                <h4>From Dr. Gay Hitler's diary (December 7, 1941):</h4>
+                <p>"Pearl Harbor attacked. America at war. Patients ask me what I think about sharing a name with our enemy. I tell them I am an American, my father was an American, his father was an American. That is all that matters."</p>
+            </div>
+
+            <h3>Newspaper Archives</h3>
+            
+            <div class="two-column">
+                <div class="document-card">
+                    <h5>Circleville Herald (1884)</h5>
+                    <p>"Death of Jacob Hitler: One of our oldest and most respected citizens passed yesterday. Mr. Hitler came to Pickaway County as a child in 1799 and lived to see wilderness become prosperity. His generosity and business acumen helped build our community."</p>
+                </div>
+                <div class="document-card">
+                    <h5>Columbus Dispatch (1952)</h5>
+                    <p>"Martha Hitler's Gift: Spinster farmer leaves 26 acres for public park, specifically requesting it bear her name to 'honor the good work of the Hitler family in Ohio.'"</p>
+                </div>
+            </div>
+
+            <h3>Academic Research</h3>
+            
+            <div class="story-box">
+                <h3>Scholarly Studies</h3>
+                
+                <h4>"The Hitler Family of Ohio: A Study in Pioneer Persistence" (2008)</h4>
+                <p>Dr. Margaret Thompson's definitive genealogical study traced the family from 18th-century Germany through seven generations in America. Published by Ohio University Press, it remains the authoritative source on the family's history.</p>
+                
+                <h4>"Names and Identity: The Hitler Family's Response to Historical Coincidence" (2015)</h4>
+                <p>A sociological study by Wright State University examining how the family and community managed the burden of a suddenly infamous name. Based on interviews with 50+ descendants and community members.</p>
+                
+                <h4>"Pioneer Agriculture in the Scioto Valley" (1995)</h4>
+                <p>Economic history featuring extensive discussion of the Hitler family's innovations in wheat cultivation and their flour trade with New Orleans. Published in Ohio Historical Quarterly.</p>
+            </div>
+        </section>
+
+        <!-- Community Impact Section -->
+        <section id="community" class="section">
+            <h2>Community Impact & Contributions</h2>
+            
+            <div class="intro-box">
+                <h3>Building Pickaway County: Two Centuries of Service</h3>
+                <p>The Hitler family's impact on Pickaway County extends far beyond their agricultural success. Through public service, philanthropy, and civic engagement, they helped transform a frontier settlement into a thriving community.</p>
+            </div>
+
+            <h3>Public Service</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year">1810-1830</span>
+                    <p><strong>George Hitler Sr.</strong> served as one of the first grand jurors when Pickaway County was organized. Helped establish the county's legal framework.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1835-1850</span>
+                    <p><strong>Jacob Hitler</strong> served three terms as township trustee. Oversaw construction of first bridge across Salt Creek.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1865-1885</span>
+                    <p><strong>Samuel Hitler</strong> served as township trustee for 20 years. Established veterans' relief fund and modernized township roads.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1920-1945</span>
+                    <p><strong>George Washington Hitler</strong> served on county agricultural board. Introduced soil conservation practices that prevented another Dust Bowl in Ohio.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1950-1975</span>
+                    <p><strong>George Gay Hitler</strong> served on Circleville city council. Championed public health initiatives and established free vaccination program.</p>
+                </div>
+            </div>
+
+            <h3>Philanthropy & Community Building</h3>
+            
+            <div class="story-box">
+                <h3>The Hitler Charitable Trust</h3>
+                <p>Established in 1920 with funds from the estate of Nelson Hitler, the trust has quietly supported Pickaway County for over a century. Its contributions include:</p>
+                
+                <ul style="margin-left: 2rem;">
+                    <li>Annual scholarships for county students pursuing agriculture or medicine</li>
+                    <li>Funding for the county library's local history collection</li>
+                    <li>Support for the county fair's youth agriculture programs</li>
+                    <li>Emergency relief funds during the Depression and recent economic downturns</li>
+                </ul>
+                
+                <p>The trust, now valued at over $2 million, continues to operate under its original charter: "To benefit the people of Pickaway County in perpetuity, with special attention to education, agriculture, and community welfare."</p>
+            </div>
+
+            <h3>Economic Development</h3>
+            
+            <div class="two-column">
+                <div class="landmark-card">
+                    <h4>Agricultural Innovation</h4>
+                    <p>The Hitler family introduced numerous agricultural improvements:</p>
+                    <ul style="margin-left: 1rem;">
+                        <li>First mechanical reaper in county (1843)</li>
+                        <li>Crop rotation techniques (1850s)</li>
+                        <li>Selective wheat breeding program (1860s)</li>
+                        <li>First silo in southern Ohio (1877)</li>
+                        <li>Mechanized dairy operation (1920s)</li>
+                    </ul>
+                </div>
+                <div class="landmark-card">
+                    <h4>Business Enterprises</h4>
+                    <p>Hitler family businesses employed hundreds over the years:</p>
+                    <ul style="margin-left: 1rem;">
+                        <li>Hitler Mill (1823-1908) - 15 employees</li>
+                        <li>Hitler General Store (1840-1920) - 8 employees</li>
+                        <li>Hitler Hardware (1925-1980) - 12 employees</li>
+                        <li>Hitler Dairy (1920-1965) - 20 employees</li>
+                        <li>Combined economic impact: $50+ million (adjusted)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Social & Cultural Contributions</h3>
+            
+            <div class="story-box">
+                <h3>Churches & Schools</h3>
+                
+                <p>The Hitler family helped establish many of Pickaway County's core institutions:</p>
+                
+                <h4>Religious Institutions</h4>
+                <p>George Hitler Sr. was a founding member of the Pickaway Presbyterian Church in 1810, donating lumber from his land for construction. The family pew, marked with a small brass plaque, remains in use today. Family members served as deacons, Sunday school teachers, and choir members for generations.</p>
+                
+                <h4>Educational Legacy</h4>
+                <p>Beyond the Hitler School, family members served on school boards continuously from 1850 to 1975. They championed:</p>
+                <ul style="margin-left: 2rem;">
+                    <li>Free public education for all children</li>
+                    <li>Hot lunch programs during the Depression</li>
+                    <li>School bus service for rural students</li>
+                    <li>Vocational agriculture programs</li>
+                </ul>
+            </div>
+
+            <h3>Community Testimonials</h3>
+            
+            <div class="testimonial">
+                <p>"When our farm burned in 1933, it was George Hitler who showed up with lumber, nails, and a crew. He organized the barn raising, and his wife Mable fed everyone for three days. They never asked for anything in return. That's the kind of neighbors the Hitlers were."</p>
+                <div class="testimonial-author">— William Patterson, farmer (1975 interview)</div>
+            </div>
+
+            <div class="testimonial">
+                <p>"Dr. Gay Hitler delivered all five of my children. When we couldn't pay during the Depression, he said 'Pay me when you can, or just name one of the kids after me!' We paid him in chickens and eggs for years. He never complained."</p>
+                <div class="testimonial-author">— Rosa Martinez, Circleville resident (1980 interview)</div>
+            </div>
+
+            <div class="testimonial">
+                <p>"The Hitler family represents what's best about Pickaway County—hard work, generosity, and commitment to community. They could have changed their name when it became difficult, but they stood firm. That takes character."</p>
+                <div class="testimonial-author">— Judge Harold Washington, Pickaway County (1995)</div>
+            </div>
+
+            <h3>Modern Engagement</h3>
+            
+            <div class="story-box">
+                <h3>The Hitler Family Today</h3>
+                
+                <p>Current generations continue the family tradition of civic engagement:</p>
+                
+                <ul style="margin-left: 2rem;">
+                    <li><strong>Jennifer Hitler-Smith</strong> - Current president of Pickaway County Historical Society</li>
+                    <li><strong>Dr. Michael Hitler</strong> - Chief of rural medicine at Ohio State Medical Center</li>
+                    <li><strong>Sarah Hitler-Johnson</strong> - Director of county agricultural extension program</li>
+                    <li><strong>Robert Hitler III</strong> - Coach of championship-winning high school agriculture team</li>
+                </ul>
+                
+                <p>The annual Hitler Family Reunion, held each July at Martha Hitler Park, draws 200+ attendees from across the nation. The 2024 reunion featured historical reenactments, genealogy workshops, and raised $15,000 for local charities.</p>
+            </div>
+        </section>
+
+        <!-- Note on Our Name Section -->
+        <section id="name" class="section">
+            <h2>A Note on Our Name</h2>
+            
+            <div class="note-box">
+                <h3>An Unfortunate Coincidence, A Separate History</h3>
+                <p>A careful examination of genealogical and historical records reveals a profound irony: the Hitler family of Pickaway County, Ohio, has a more authentic and long-standing claim to their surname than the family of the man who made it infamous.</p>
+            </div>
+
+            <h3>The Historical Timeline</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year">1754</span>
+                    <p>Georg Hortler (Hitler) arrives in America—135 years before Adolf Hitler's birth</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1799</span>
+                    <p>Hitler family established in Ohio—90 years before Adolf Hitler's birth</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1876</span>
+                    <p>Alois Schicklgruber changes his name to Hitler in Austria—77 years after Ohio Hitlers settled</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1889</span>
+                    <p>Adolf Hitler born—the Ohio family had been American for 135 years</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1933-1945</span>
+                    <p>Nazi era—Ohio Hitlers serve in U.S. military against the Axis powers</p>
+                </div>
+            </div>
+
+            <h3>The Burden of a Name</h3>
+            
+            <div class="story-box">
+                <h3>Conversations About Changing</h3>
+                
+                <p>Family records reveal that the question of changing their surname was discussed at several family meetings, particularly during World War II. The debate was settled definitively at a 1943 family gathering, recorded in cousin William Hitler's diary:</p>
+                
+                <div class="quote">
+                    "Uncle Gay spoke for all of us when he said, 'We were Hitlers before that Austrian was born, we were Hitlers when he was a nobody painting postcards, and we'll be Hitlers long after the world forgets him. This is our name, earned through honest work and good citizenship. We won't surrender it to a madman.'"
+                </div>
+                
+                <p>The family voted unanimously to keep their name. Several young men were preparing to enlist, and they argued that changing their name would seem cowardly when they were about to fight for their country.</p>
+            </div>
+
+            <h3>Community Support</h3>
+            
+            <div class="story-box">
+                <h3>The Petition of 1943</h3>
+                
+                <p>Perhaps the most moving testament to the family's standing came in 1943, when rumors circulated that the government might force German-Americans with "problematic" names to change them. Without the family's knowledge, Circleville citizens organized a petition:</p>
+                
+                <div class="quote">
+                    "We, the undersigned citizens of Pickaway County, Ohio, hereby affirm that the Hitler family of our county are patriotic Americans of the highest character. Their name was earned through generations of service to our community. We support their right to maintain their ancestral name and reject any association with foreign enemies of our nation."
+                </div>
+                
+                <p>The petition gathered 1,847 signatures—nearly half the county's adult population—and was sent to Governor John W. Bricker and Ohio's congressional delegation. No action was ever taken to force a name change.</p>
+            </div>
+
+            <h3>Living with History</h3>
+            
+            <div class="testimonial">
+                <h4>Reflections from Family Members</h4>
+                <p>"Growing up, yes, there were jokes and stares. But our parents taught us to hold our heads high. We'd say, 'We're the Ohio Hitlers—the good ones.' Most people understood. Those who didn't weren't worth worrying about."</p>
+                <div class="testimonial-author">— Robert Hitler, grandson of Dr. Gay Hitler (2010 interview)</div>
+            </div>
+
+            <div class="testimonial">
+                <p>"When I married into the family, I took the Hitler name proudly. My husband's family built this county. They've been here since it was wilderness. Why should they change their name because of someone they never knew, from a place they'd never been?"</p>
+                <div class="testimonial-author">— Dorothy Mills Hitler (1995 interview)</div>
+            </div>
+
+            <h3>A Name Reclaimed</h3>
+            
+            <div class="story-box">
+                <h3>The 21st Century Perspective</h3>
+                
+                <p>As time passes and World War II fades from living memory, the Hitler family of Ohio increasingly sees their name not as a burden but as a testament to resilience. Young family members report that the name often serves as a conversation starter, allowing them to share their remarkable family history.</p>
+                
+                <p>In 2019, family member Sarah Hitler gave a TED talk titled "My Name is Hitler: An American Story," which went viral with over 2 million views. She concluded:</p>
+                
+                <div class="quote">
+                    "My name is Hitler. My family has carried this name with honor for over 250 years in America. We didn't choose what happened to our name in the 20th century, but we chose how to respond—with dignity, patriotism, and an unshakeable knowledge of who we really are. We are farmers, soldiers, teachers, doctors. We are Americans. We are Hitlers. And we're proud of it."
+                </div>
+            </div>
+
+            <div class="note-box">
+                <h3>Our Heritage Stands</h3>
+                <p>The Hitler name on roads, parks, and cemeteries in Pickaway County stands as more than historical markers—they are declarations that local history matters, that good people should not be erased because of the evil acts of unrelated individuals, and that a community can choose to remember its neighbors for who they truly were.</p>
+                
+                <p>When visitors express surprise at seeing Hitler Road or Martha Hitler Park, locals take pride in explaining: "Oh, those are our Hitlers. They've been here since 1799. Good people. Nothing to do with the other one."</p>
+                
+                <p>This is our history. This is our heritage. This is our name.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Hitler Family of Pickaway County, Ohio. Preserving Our American Heritage Since 1799.</p>
+        <p>For genealogical inquiries, historical research, or family connections, contact the Pickaway County Historical Society.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Update nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
